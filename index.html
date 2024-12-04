@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>All About Sushi</title>
     <style>
+        /* Base styles for both dark and light mode */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             color: #333;
@@ -104,10 +104,93 @@
         footer p {
             margin: 0;
         }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        body.dark-mode header {
+            background-color: #000;
+        }
+
+        body.dark-mode section {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark-mode h2, body.dark-mode h3, body.dark-mode p {
+            color: #fff;
+        }
+
+        body.dark-mode iframe {
+            border: 1px solid #fff;
+        }
+
+        body.dark-mode .warning {
+            background-color: #ff6666;
+            color: #fff;
+        }
+
+        body.dark-mode footer {
+            background-color: #000;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #fff;
+            color: #333;
+        }
+
+        body.light-mode header {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        body.light-mode section {
+            background-color: #fff;
+            color: #333;
+        }
+
+        body.light-mode h2, body.light-mode h3, body.light-mode p {
+            color: #333;
+        }
+
+        body.light-mode iframe {
+            border: 1px solid #333;
+        }
+
+        body.light-mode .warning {
+            background-color: #ffcccb;
+            color: #900;
+        }
+
+        body.light-mode footer {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        /* Button to toggle mode */
+        .mode-toggle {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .mode-toggle:hover {
+            background-color: #555;
+        }
+
     </style>
 </head>
 
-<body>
+<body class="light-mode">
 
     <header>
         <h1>Hello, Chaps!</h1>
@@ -115,6 +198,8 @@
     </header>
 
     <main>
+        <button class="mode-toggle" onclick="toggleMode()">Switch to Dark Mode</button>
+        
         <section class="tips">
             <h2>Best Tips & Tricks for Making Sushi</h2>
             <p>Before we start with the steps, feel free to watch this helpful video tutorial!</p>
@@ -181,19 +266,4 @@
 
         <section class="warning">
             <h3>Important Warning</h3>
-            <p>Rice sometimes contains spores of bacteria that cause food poisoning. These spores can survive cooking, so if rice is left standing at room temperature, harmful bacteria can multiply. Always store cooled rice at less than 4°C and refrigerate sushi if not consumed immediately.</p>
-        </section>
-
-        <section>
-            <h2>Final Thoughts</h2>
-            <p>Your sushi will be safe to eat on the day you make it. If you're storing it for later, keep it in the refrigerator for freshness!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 All About Sushi | Created with love for sushi enthusiasts</p>
-    </footer>
-
-</body>
-
-</html>
+           
