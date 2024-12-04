@@ -108,7 +108,7 @@
 
         /* Dark mode styles */
         body.dark-mode {
-            background-color: #222;
+            background-color: #000;
             color: #fff;
         }
 
@@ -118,7 +118,7 @@
         }
 
         body.dark-mode section {
-            background-color: #333;
+            background-color: #222;
             color: #fff;
         }
 
@@ -200,6 +200,7 @@
     </header>
 
     <main>
+        <!-- Button to toggle dark mode -->
         <button class="mode-toggle" onclick="toggleMode()">Switch to Dark Mode</button>
         
         <section class="tips">
@@ -262,4 +263,31 @@
             <div class="video-section">
                 <h3>Watch the History of Sushi!</h3>
                 <p>Prefer learning by watching? Check out this informative video about the history of sushi:</p>
-                <iframe src="https://www.youtube.com/embed/EhZMu9tK-NQ?si=t1yYlOrbI4ubZDAK" title="S
+                <iframe src="https://www.youtube.com/embed/EhZMu9tK-NQ?si=t1yYlOrbI4ubZDAK" title="Sushi History Video"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sushi Info. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+
+            // Toggle button text based on current mode
+            const modeButton = document.querySelector(".mode-toggle");
+            if (body.classList.contains("dark-mode")) {
+                modeButton.textContent = "Switch to Light Mode";
+            } else {
+                modeButton.textContent = "Switch to Dark Mode";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
