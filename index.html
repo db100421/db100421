@@ -188,21 +188,6 @@
         .mode-toggle:hover {
             background-color: #555;
         }
- <script>
-        function toggleMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-            body.classList.toggle("light-mode");
-
-            // Toggle button text based on current mode
-            const modeButton = document.querySelector(".mode-toggle");
-            if (body.classList.contains("dark-mode")) {
-                modeButton.textContent = "Switch to Light Mode";
-            } else {
-                modeButton.textContent = "Switch to Dark Mode";
-            }
-        }
-    </script>
     </style>
 </head>
 
@@ -283,32 +268,41 @@
                 <p>Prefer learning by watching? Check out this informative video about the history of sushi:</p>
                 <iframe src="https://www.youtube.com/embed/EhZMu9tK-NQ?si=t1yYlOrbI4ubZDAK" title="Sushi History Video"></iframe>
             </div>
- 
+
         <h2>Best Sushi Chefs In The World</h2>
-<h3>If You want to watch a video here it is: 
-This video is about Jiro Ono; The Legendary Sushi Maker.</h3>
+        <h3>If You want to watch a video here it is: 
+        This video is about Jiro Ono; The Legendary Sushi Maker.</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1Wwu6R9v4xw?si=XnS9syAEl4xuPkJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>Jiro Ono is a legendary sushi chef, renowned for his Michelin-starred restaurant **Sukiyabashi Jiro** in Tokyo. Born in 1925, Jiro began working in a restaurant at the age of 9 and opened his own sushi restaurant in 1965.
-    Sukiyabashi Jiro, a small eatery located in a Tokyo subway station, has earned **3 Michelin stars** due to Jiro's obsessive dedication to his craft. He is known for his meticulous approach to sushi, focusing on the quality of fish, rice, and precise preparation methods.
-    His sushi-making philosophy emphasizes simplicity, with every element perfected to the highest standard, and even at 99 years old, he continues to refine his skills.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1Wwu6R9v4xw?si=XnS9syAEl4xuPkJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Jiro Ono is a legendary sushi chef, renowned for his Michelin-starred restaurant **Sukiyabashi Jiro** in Tokyo. Born in 1925, Jiro began working in a restaurant at the age of 9 and opened his own sushi restaurant in 1965.
+            Sukiyabashi Jiro, a small eatery located in a Tokyo subway station, has earned **3 Michelin stars** due to Jiro's obsessive dedication to his craft. He is known for his meticulous approach to sushi, focusing on the quality of fish, rice, and precise preparation methods.
+            His sushi-making philosophy emphasizes simplicity, with every element perfected to the highest standard, and even at 99 years old, he continues to refine his skills.</p>
 
-Jiro's influence extends far beyond his restaurant. His life and philosophy were showcased in the documentary **"Jiro Dreams of Sushi,"** which helped introduce his dedication to global audiences. Jiro’s approach is rooted in discipline and a lifelong pursuit of perfection.
-    His sons, Yoshikazu and Takashi, continue his work, with Yoshikazu managing the Tokyo location. Despite his fame, Jiro remains humble, believing that true mastery requires constant improvement. His legacy has inspired chefs worldwide to adopt a similar commitment to craftsmanship and excellence in their own culinary journeys.</p>
-
-            <img src = "https://eastwest.eu/wp-content/uploads/2017/01/jiro_ono_chef.jpg">
-            
-            
+        <img src="https://eastwest.eu/wp-content/uploads/2017/01/jiro_ono_chef.jpg" alt="Jiro Ono">
         
-        </section>
-        
+    </section>
+
     </main>
 
     <footer>
         <p>&copy; 2024 All About Sushi. All rights reserved.</p>
     </footer>
 
-   
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+
+            // Toggle button text based on current mode
+            const modeButton = document.querySelector(".mode-toggle");
+            if (body.classList.contains("dark-mode")) {
+                modeButton.textContent = "Switch to Light Mode";
+            } else {
+                modeButton.textContent = "Switch to Dark Mode";
+            }
+        }
+    </script>
 
 </body>
 
