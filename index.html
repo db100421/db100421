@@ -188,7 +188,21 @@
         .mode-toggle:hover {
             background-color: #555;
         }
+ <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
 
+            // Toggle button text based on current mode
+            const modeButton = document.querySelector(".mode-toggle");
+            if (body.classList.contains("dark-mode")) {
+                modeButton.textContent = "Switch to Light Mode";
+            } else {
+                modeButton.textContent = "Switch to Dark Mode";
+            }
+        }
+    </script>
     </style>
 </head>
 
@@ -269,28 +283,25 @@
                 <p>Prefer learning by watching? Check out this informative video about the history of sushi:</p>
                 <iframe src="https://www.youtube.com/embed/EhZMu9tK-NQ?si=t1yYlOrbI4ubZDAK" title="Sushi History Video"></iframe>
             </div>
+ 
+        <h2>Best Sushi Chefs In The World</h2>
+<h3>If You want to watch a video here it is: 
+This video is about Jiro Ono; The Legendary Sushi Maker.</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Wwu6R9v4xw?si=XnS9syAEl4xuPkJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            
+        
         </section>
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Sushi Info. All rights reserved.</p>
+        <p>&copy; 2024 All About Sushi. All rights reserved.</p>
     </footer>
 
-    <script>
-        function toggleMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-            body.classList.toggle("light-mode");
-
-            // Toggle button text based on current mode
-            const modeButton = document.querySelector(".mode-toggle");
-            if (body.classList.contains("dark-mode")) {
-                modeButton.textContent = "Switch to Light Mode";
-            } else {
-                modeButton.textContent = "Switch to Dark Mode";
-            }
-        }
-    </script>
+   
 
 </body>
 
